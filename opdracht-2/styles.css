@@ -1,8 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .product {
     /* "auto" aan de zijkanten zorgt ervoor dat het element in het midden komt te staan*/
     margin: 80px auto;
     /* Dit element heeft een vaste breedte van 350 pixels */
     width: 350px;
+    position: relative;
+
 }
 
-/* - Vul dit document aan met jouw eigen css! - */
+.product-image {
+    width: 100%;
+}
+
+.favourite-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+.new-tag {
+
+    background-color: #e8e8e8;
+    color: #DE6127 ;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin: 0;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -70px;
+    top: 60px;
+}
+
+.product-label {
+    color: #737373;
+    margin: 0;
+    font-size: 12px;
+}
+.product-name {
+    margin: 0;
+    font-size: 16px;
+}
+
+.indv-colour-ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.indv-colour-ball + .indv-colour-ball {
+    margin-left: 2px;
+}
+
+.pink-ball {
+    background-color: #faa0c7;
+}
+
+.purplish-ball {
+    background-color: #272729;
+}
+
+.brownish-ball {
+    background-color: #928471;
+}
+
+.gray-ball {
+    background-color: #c2c2b4;
+}
